@@ -1,0 +1,19 @@
+.header-container{
+    background-color: rgba(67, 65, 65, 1);
+    display: flex;
+}
+.image-container{
+    margin-left:10%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.image{
+    height: 4em;
+    width: 4em;
+    display: flex;
+}
+.img{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}

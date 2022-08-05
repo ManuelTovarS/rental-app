@@ -1,14 +1,15 @@
 import {Route, Routes} from 'react-router-dom'
 import {Check, Payment, Registration} from '../pages/index'
 export const AppRouter = () => {
-  const authStatus = 'not-authenticated'
+  const registrationStatus = 'not-authenticated'
+  const paymentStatus = 'not-authenticated'
   return (
     <>
       <Routes>
         <Route path="/*" element={<Check/>}/>
         <Route path="/check" element={<Check/>}/>
-        <Route path="/payment" element={<Payment/>}/>
-        <Route path="/registration" element={<Registration/>}/>
+        {registrationStatus !== 'not-authenticated' && <Route path="/registration" element={<Registration/>}/>}
+        {paymentStatus !== 'not-authenticated' && <Route path="/payment" element={<Payment/>}/>}
       </Routes>
     </>
   )
