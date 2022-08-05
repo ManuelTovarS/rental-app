@@ -18,7 +18,7 @@ export const NavBar = () => {
         navigate('/payment')
     }
     return (
-        <div>
+        <div className='navBar-layout'>
             <div className="navBar-container">
                 <div className="buttoms-container">
                     <button

@@ -13,7 +13,6 @@ export const LanguagePicker = () => {
             </div>
             <select name="language" id="language">
                 {languages.map((element,i) => {
-                    console.log(element);
                     return(<option key={i} value ={element}> {element}</option>)
                 })}
             </select>

@@ -1,7 +1,10 @@
+.navBar-layout{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .navBar-container{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
 }
 .navBar-text{
     display: flex;
