@@ -1,2 +1,3 @@
-export * from './header/header';
-export * from './footer/footer'
+export * from './header/Header';
+export * from './footer/Footer'
+export * from './navBar/NavBar'

@@ -1,0 +1,38 @@
+.navBar-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.navBar-text{
+    display: flex;
+    justify-content: center;
+}
+.text-container{
+    display: flex;
+    margin-left:0rem;
+    margin-right: 1.5rem;
+    margin-top: 0.7em;
+}
+.registration-container{
+    margin-left: 5.5rem;
+    margin-right: 8rem;
+}
+.buttoms-container{
+    display: flex;
+}
+button{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(221, 219, 218, 1);
+}
+.linea{
+    width: 10rem;
+    background-color:rgba(221, 219, 218, 1);
+    height: 2px;
+    align-self: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
