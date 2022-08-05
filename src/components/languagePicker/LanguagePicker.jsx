@@ -8,13 +8,13 @@ export const LanguagePicker = () => {
     ]
     return (
         <div className='language-container'>
-            <div className='text-container'>
+            <div className='text-container-language'>
                 <p>Language </p>
             </div>
             <select name="language" id="language">
                 {languages.map((element,i) => {
                     console.log(element);
-                    return(<option value ={element}> {element}</option>)
+                    return(<option key={i} value ={element}> {element}</option>)
                 })}
             </select>
         </div>
