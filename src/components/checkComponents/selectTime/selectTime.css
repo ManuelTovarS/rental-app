@@ -1,6 +1,7 @@
 .selecTime-component-container{
     display: flex;
 }
-.inputTime-container{
+.inputEndTime-container{
     display: flex;
+    margin-left: 1em;
 }
