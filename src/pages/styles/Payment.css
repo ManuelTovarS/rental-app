@@ -1,0 +1,35 @@
+.payment-wrapper {
+    background: fuchsia;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.payment-content {
+    background: red;
+    display: flex;
+    width: 85%;
+}
+.payment-container {
+    background: yellow;
+    width: 65%;
+    margin-right: 0.5rem;
+}
+.summary-container {
+    background: green;
+    width: 35%;
+}
+.border-card {
+    border-radius: 5px;
+    padding: 2rem;
+    border: 1px solid gray;
+}
+.title-sections {
+    margin: 0rem
+}
+.two-columns {
+    display: flex;
+}
+.input-box {
+    width: 50%;
+}
