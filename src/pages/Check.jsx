@@ -7,17 +7,17 @@ export const Check = () => {
   return (
     <div className='check-layout'>
       <div className='check-select-container'>
-        <p>1. Select a category according to your activity</p>
+        <p><b>1.</b> Select a category according to your activity</p>
         <SelectCategory/>
-        <p>2. Select the date you want for your activity</p>
+        <p><b>2.</b> Select the date you want for your activity</p>
         <CalendarCheck/>
-        <p>3. Select the time frame for your activity</p>
+        <p><b>3.</b> Select the time frame for your activity</p>
         <SelectTime/>
-        <p>4. Number of Guests</p>
+        <p><b>4.</b> Number of Guests</p>
         <input></input>
       </div>
       <div className='chech-choose-container'>
-        <p>Choose the package for you</p>
+        <p><b>5.</b>Choose the package for you</p>
         {packageSelected 
           ? <PackageChooser/>
           : <div>The package will be available once you fill out all the fields</div> 

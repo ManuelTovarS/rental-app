@@ -1,4 +1,22 @@
 .check-layout{
     display: flex;
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.check-select-container{
+    border: solid;
+    border-color: rgba(196, 196, 196, 1);
+    padding: 1em;
+    border-radius: 10px;
+    width: 50%;
+    margin-right: 2.5%;
+}
+.chech-choose-container{
+    border: solid;
+    border-color: rgba(196, 196, 196, 1);
+    padding: 1em;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 2.5%;
 }
