@@ -23,11 +23,11 @@
 .buttoms-container{
     display: flex;
 }
-button{
+.button-nav{
     display: block;
     width: 1.2rem;
     height: 1.2rem;
-    border-radius: 50%;
+    border-radius: 50% !important;
     border: none;
     background-color: rgba(221, 219, 218, 1);
 }
@@ -51,4 +51,7 @@ button{
     align-self: center;
     margin-left: 0.4em;
     margin-right: 0.4em;
+}
+.linea-pass{
+    background-color: rgba(24, 137, 255, 1) !important;
 }

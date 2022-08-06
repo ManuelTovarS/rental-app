@@ -1,23 +1,15 @@
-import { Calendar, dateFnsLocalizer } from 'react-big-calendar'
-import 'react-big-calendar/lib/css/react-big-calendar.css'
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
 import { addHours, format, parse, startOfWeek, getDay} from 'date-fns/esm'
 import enUS from 'date-fns/locale/en-US'
 
+
 import './calendarCheck.css'
+import { useState } from 'react';
 
 const locales = {
   'en-US': enUS,
 }
-
-const localizer = dateFnsLocalizer({
-  format,
-  parse,
-  startOfWeek,
-  getDay,
-  locales,
-})
-localizer.formats.weekdayFormat = 'ccc'
-localizer.formats.monthHeaderFormat = 'MMM yyy'
 const events = [{
   notes: 'Comprar Pastel',
   start: new Date(),
@@ -29,23 +21,14 @@ const events = [{
   }
 }]
 export const CalendarCheck = () => {
-  console.log(localizer)
+  const [date, setDate] = useState(new Date());
+  const locale = 'fr-CA';
+  console.log(format(date, 'MMM'));
   return (
     <div className='calendar-component-container'>
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        views={['month']}
-        style={{ height: 300}}
-        messages={
-          {
-            next: ">",
-            previous: "<",
-            year: 'Year'
-          }
-        }
+      <Calendar 
+        onChange={setDate} 
+        value={date} 
       />
     </div>
   )
