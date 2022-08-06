@@ -1,13 +1,16 @@
+.navBar-layout{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .navBar-container{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
 }
 .navBar-text{
     display: flex;
     justify-content: center;
 }
-.text-container{
+.text-container-navBar{
     display: flex;
     margin-left:0rem;
     margin-right: 1.5rem;
@@ -22,17 +25,30 @@
 }
 button{
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 50%;
     border: none;
     background-color: rgba(221, 219, 218, 1);
+}
+.active-nav{
+    background-color: rgba(255, 255, 255, 1) !important;
+    border: solid !important;
+    border-color: rgba(24, 137, 255, 1) !important;
+    border-width: 3px !important;
+}
+.completed-nav{
+    background-color: rgba(24, 137, 255, 1) !important;
+    background-image: url("../../assets/img/navIcon.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.7rem;
 }
 .linea{
     width: 10rem;
     background-color:rgba(221, 219, 218, 1);
     height: 2px;
     align-self: center;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
 }
