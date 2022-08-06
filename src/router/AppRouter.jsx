@@ -1,8 +1,8 @@
 import {Route, Routes} from 'react-router-dom'
 import {Check, Payment, Registration} from '../pages/index'
 export const AppRouter = () => {
-  const registrationStatus = 'not-authenticated'
-  const paymentStatus = 'not-authenticated'
+  const registrationStatus = 'authenticated'
+  const paymentStatus = 'authenticated'
   return (
     <>
       <Routes>
