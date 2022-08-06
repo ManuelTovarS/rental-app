@@ -1,0 +1,14 @@
+.categories-component-container{
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#categories{
+    padding-left: 0.5em;
+    padding-right: 13em !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: rgba(220, 219, 217, 1);
+    border-radius: 5px;
+}
