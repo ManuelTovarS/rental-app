@@ -1,0 +1,26 @@
+.calendar-component-container{
+    overflow: hidden;
+}
+.rbc-btn-group > button:first-child:not(:last-child){
+    display: none;
+}
+.rbc-btn-group button + button{
+    margin-left: 0em !important;
+}
+.rbc-toolbar button{
+    border: none !important;
+    color: rgba(112, 110, 107, 1) !important;
+    vertical-align: super !important;
+}
+.rbc-toolbar{
+    justify-content: flex-start !important;
+    margin-bottom: 0;
+}
+.rbc-btn-group > button:not(:first-child):not(:last-child){
+    margin-right: 8em;
+}
+.rbc-toolbar .rbc-toolbar-label{
+    margin-left: -22em;
+    z-index: -1;
+    margin-bottom: 0.2em;
+}
