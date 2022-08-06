@@ -4,17 +4,43 @@ import './styles/check.css'
 
 export const Check = () => {
   const [packageSelected, setPackageSelected] = useState(false);
+  const [date, setDate] = useState(undefined);
+  const [guest, setGuest] = useState(undefined)
+  const [startTime, setStartTime] = useState(undefined);
+  const [endTime, setEndTime] = useState(undefined);
+  const [category, setCategory] = useState(undefined);
+  const categories = [
+    'Birthday Parties',
+    'Category 2',
+    'Category 3'
+  ];
+  const handlerInput = (e)=>{
+    setGuest(e.nativeEvent.target.value)
+  }
+  console.log(guest);
+  console.log(date);
+  console.log(startTime);
+  console.log(endTime);
+  console.log(category);
   return (
     <div className='check-layout'>
       <div className='check-select-container'>
         <p><b>1.</b> Select a category according to your activity</p>
-        <SelectCategory/>
+        <SelectCategory
+          categories= {categories}
+          setCategory = {setCategory}
+        />
         <p><b>2.</b> Select the date you want for your activity</p>
-        <CalendarCheck/>
+        <CalendarCheck 
+          setDate = {setDate}
+        />
         <p><b>3.</b> Select the time frame for your activity</p>
-        <SelectTime/>
+        <SelectTime
+          setStartTime = {setStartTime}
+          setEndTime = {setEndTime}
+        />
         <p><b>4.</b> Number of Guests</p>
-        <input></input>
+        <input onChange={handlerInput}></input>
       </div>
       <div className='chech-choose-container'>
         <p><b>5.</b>Choose the package for you</p>
