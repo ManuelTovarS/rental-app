@@ -1,1 +1,19 @@
-body { margin: 0; padding: 0; }
+body {
+  font-family: "Helvetica Neue";
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 19px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
