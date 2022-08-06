@@ -1,26 +1,41 @@
-.calendar-component-container{
-    overflow: hidden;
+.react-calendar__navigation{
+    height: 1em !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
-.rbc-btn-group > button:first-child:not(:last-child){
-    display: none;
+.react-calendar__month-view__weekdays{
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.7em;
+}   
+.react-calendar{
+    border: 0.6px solid rgba(201, 201, 200, 1);
+    border-radius: 4px;
 }
-.rbc-btn-group button + button{
-    margin-left: 0em !important;
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus{
+    background: none;
 }
-.rbc-toolbar button{
-    border: none !important;
-    color: rgba(112, 110, 107, 1) !important;
-    vertical-align: super !important;
+.react-calendar__tile{
+    line-height: 0em;
 }
-.rbc-toolbar{
-    justify-content: flex-start !important;
-    margin-bottom: 0;
+.react-calendar__tile:nth-child(n){
+    border-bottom: 1px solid rgba(201, 201, 200, 1);
+    border-right: 1px solid rgba(201, 201, 200, 1);
+
 }
-.rbc-btn-group > button:not(:first-child):not(:last-child){
-    margin-right: 8em;
+.react-calendar__tile:nth-last-child(-n+7){
+    border-bottom: none;
 }
-.rbc-toolbar .rbc-toolbar-label{
-    margin-left: -22em;
-    z-index: -1;
-    margin-bottom: 0.2em;
+.react-calendar__tile:nth-child(7n){
+    border-right: none;
 }
+button{
+    border-radius: 0 !important;
+}
+.react-calendar__month-view__days{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+

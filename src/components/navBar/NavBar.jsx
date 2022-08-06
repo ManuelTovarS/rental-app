@@ -22,17 +22,17 @@ export const NavBar = () => {
             <div className="navBar-container">
                 <div className="buttoms-container">
                     <button
-                        className={`${isActive === 'check' ? 'active-nav':'completed-nav'}`}
+                        className={`${isActive === 'check' ? 'button-nav active-nav':'button-nav completed-nav'}`}
                         onClick={checkNav}
                     ></button>
-                    <div className='linea'></div>
+                    <div className={`${isActive === 'check' ? 'linea':'linea linea-pass'}`}></div>
                     <button
-                        className={ `${isActive === 'registration'? 'active-nav':(isActive === 'payment'? 'completed-nav':'')}`}
+                        className={ `${isActive === 'registration'? 'button-nav active-nav':(isActive === 'payment'? 'button-nav completed-nav':'button-nav')}`}
                         onClick={checkRegis}                        
                     ></button>
-                    <div className='linea'></div>
+                    <div className={`${isActive !== 'payment'? 'linea':'linea linea-pass'}`}></div>
                     <button
-                        className={`${isActive === 'payment'? 'active-nav':''}`}
+                        className={`${isActive === 'payment'? 'button-nav active-nav':'button-nav'}`}
                         onClick={checkPay}                                               
                     ></button>
                 </div>
