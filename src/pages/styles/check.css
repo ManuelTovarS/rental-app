@@ -20,3 +20,11 @@
     width: 50%;
     margin-left: 2.5%;
 }
+.title-step {
+    margin-bottom: 0.5rem;
+}
+.input-number {
+    border: 1px solid rgba(220, 219, 217, 1);
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+}

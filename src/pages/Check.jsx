@@ -43,7 +43,7 @@ export const Check = () => {
         <input onChange={handlerInput}></input>
       </div>
       <div className='chech-choose-container'>
-        <p><b>5.</b>Choose the package for you</p>
+        <p className='title-step'><b>5.</b> Choose the package for you</p>
         {packageSelected 
           ? <PackageChooser/>
           : <div>The package will be available once you fill out all the fields</div> 

@@ -1,6 +1,10 @@
 import './packageChooser.css'
+import { RentalEvent } from '../../rentalEvent/rentalEvent'
+
 export const PackageChooser = () => {
   return (
-    <div>PackageChooser</div>
+    <div className='rentals-container'>
+      <RentalEvent />
+    </div>
   )
 }
