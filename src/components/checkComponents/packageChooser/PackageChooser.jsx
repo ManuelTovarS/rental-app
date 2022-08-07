@@ -5,6 +5,8 @@ export const PackageChooser = () => {
   return (
     <div className='rentals-container'>
       <RentalEvent />
+      <RentalEvent />
+      <RentalEvent />
     </div>
   )
 }

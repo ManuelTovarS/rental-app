@@ -3,7 +3,7 @@ import {CalendarCheck, SelectCategory, SelectTime, PackageChooser} from '../comp
 import './styles/check.css'
 
 export const Check = () => {
-  const [packageSelected, setPackageSelected] = useState(false);
+  const [packageSelected, setPackageSelected] = useState(true);
   const [date, setDate] = useState(undefined);
   const [guest, setGuest] = useState(undefined)
   const [startTime, setStartTime] = useState(undefined);
@@ -17,11 +17,6 @@ export const Check = () => {
   const handlerInput = (e)=>{
     setGuest(e.nativeEvent.target.value)
   }
-  console.log(guest);
-  console.log(date);
-  console.log(startTime);
-  console.log(endTime);
-  console.log(category);
   return (
     <div className='check-layout'>
       <div className='check-select-container'>

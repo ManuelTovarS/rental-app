@@ -1,3 +1,4 @@
 .rentals-container {
-    background: yellow;
+    overflow: scroll;
+    height: 30rem;
 }
